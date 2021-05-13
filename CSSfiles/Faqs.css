@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Texturina:wght@600&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-width: 390px;
+}
+
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.layer {
+    background-color: rgba(0, 0, 20, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container1 .centered h1 {
+    font-size: 45px;
+    margin-bottom: 18px;
+    color: white;
+}
+
+.container1 .centered span {
+    font-size: 18px;
+    color: white;
+}
+
+.container1 .centered span a {
+    color: white;
+    text-decoration: none;
+}
+
+.container1 .centered span a:hover {
+    color: crimson;
+}
+
+.parts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*position: relative;*/
+    /*height: 600px;*/
+    width: 100%;
+    margin-top: 50px;
+}
+
+.left {
+    width: 50%;
+    /*height:600px;*/
+}
+
+.right {
+    width: 50%;
+    /* height:600px;*/
+}
+
+#right1 h1,
+#left2 h1 {
+    font-family: 'Texturina', serif;
+}
+
+#left1,
+#right2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parts img {
+    width: 80%;
+}
+
+p.accordion {
+    background-color: #eee;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 1s;
+    margin-bottom: 10px;
+}
+
+
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+p.accordion.active,
+p.accordion:hover {
+    background-color: #0084ff;
+}
+
+
+/* Unicode character for "plus" sign (+) */
+
+p.accordion:after {
+    content: '\2795';
+    font-size: 15px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    transition: 1s;
+}
+
+
+/* Unicode character for "minus" sign (-) */
+
+p.accordion.active:after {
+    content: "\2796";
+    transition: 1s;
+}
+
+
+/* Style the element that is used for the panel class */
+
+div.panel {
+    padding: 15px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    opacity: 0;
+    margin-bottom: 10px;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+    /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+.parts h1 {
+    text-align: center;
+    margin: 30px;
+    font-size: 40px;
+}
+
+.container1 img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 350px;
+    opacity: 0.5;
+}
+
+@media(max-width:1023px) {
+    .left,
+    .right {
+        width: 600px;
+        margin: auto;
+    }
+    .parts {
+        justify-content: center;
+        flex-direction: unset;
+    }
+}

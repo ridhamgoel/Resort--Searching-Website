@@ -1,0 +1,213 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#header {
+    position: relative;
+    text-align: center;
+}
+
+.layer {
+    background-color: rgba(0, 0, 20, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#header img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 400px;
+    opacity: 0.4;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+}
+
+#header .centered h1 {
+    font-size: 45px;
+    margin-bottom: 18px;
+    color: white;
+}
+
+#header .centered span {
+    font-size: 18px;
+    color: white;
+}
+
+#header .centered span a {
+    color: white;
+    text-decoration: none;
+}
+
+#header .centered span a:hover {
+    color: crimson;
+}
+
+.container-fluid .info {
+    margin: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid skyblue;
+}
+
+.container-fluid .content {
+    text-align: center;
+}
+
+.container-fluid .content p {
+    text-align: justify;
+    margin: 25px 45px;
+    font-size: 18px;
+    color: rgb(88, 76, 76);
+}
+
+.container-fluid .content .top-img,
+.container-fluid .content .center-img {
+    width: 50%;
+    height: 650px;
+    margin: 30px auto;
+    display: block;
+}
+
+@media(max-width:991px) {
+    .container-fluid .container-fluid .content img {
+        height: 400px;
+        margin: 30px auto;
+    }
+}
+
+@media(max-width:767px) {
+    .container-fluid .container-fluid .content img {
+        height: 300px;
+        margin: 30px auto;
+    }
+}
+
+@media(max-width:575px) {
+    .container-fluid .container-fluid .content img {
+        height: 220px;
+        margin: 30px auto;
+    }
+}
+
+.container-fluid .content .highlight-content {
+    width: 80%;
+    background-color: darkblue;
+    margin: 15px auto;
+    border-radius: 6px;
+    justify-content: center;
+}
+
+.container-fluid .content .highlight-content p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+    padding: 25px;
+}
+
+.container-fluid .content h4 {
+    border-bottom: 1px solid skyblue;
+    font-size: 25px;
+    font-style: italic;
+    color: grey;
+    font-family: 'Pacifico';
+    padding-bottom: 12px;
+}
+
+.end-img img {
+    width: 35%;
+    display: block;
+    height: 30px;
+    margin: 50px auto;
+}
+
+.comments {
+    margin: 50px;
+}
+
+.comments #heading {
+    font-size: 38px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.comments .container-fluid .review {
+    display: flex;
+    flex-direction: row;
+}
+
+.comments .container-fluid .review .text {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    font-size: 18px;
+}
+
+.comments .container-fluid .review .img i {
+    font-size: 70px;
+    margin: 25px;
+    color: grey;
+}
+
+.comments .container-fluid .review .text h5 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+}
+
+.comments h2 {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 30px 0px 15px 0px;
+    font-size: 38px;
+}
+
+.comments h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.comments .form-container {
+    border: 3px solid rgb(83, 146, 170);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.comments .form-container .form-group label {
+    color: darkgray;
+}
+
+.comments .form-container .form-group .form-control::placeholder {
+    color: rgb(148, 141, 141);
+    font-size: 18px;
+}
+
+.comments .form-container .form-group .form-check .form-check-label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.comments .form-container form button {
+    color: white;
+    font-weight: bold;
+    background-color: rgba(14, 60, 104, 0.911);
+    border: none;
+    outline: none;
+    padding: 20px 25px;
+    font-size: 18px;
+    border-radius: 0px;
+}
+
+.comments .form-container form button:hover {
+    background-color: rgba(56, 49, 49, 0.938);
+}

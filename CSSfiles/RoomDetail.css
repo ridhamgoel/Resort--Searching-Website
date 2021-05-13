@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Texturina:wght@600&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding: 10px;
+}
+
+body {
+    min-width: 390px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    position: relative;
+    text-align: center;
+}
+
+.layer {
+    background-color: rgba(0, 0, 20, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#header img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 350px;
+    opacity: 0.4;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+}
+
+#header .centered h1 {
+    font-size: 45px;
+    margin-bottom: 18px;
+    color: white;
+}
+
+#header .centered span {
+    font-size: 18px;
+    color: white;
+}
+
+#header .centered span a {
+    color: white;
+    text-decoration: none;
+}
+
+#header .centered span a:hover {
+    color: crimson;
+}
+
+.left {
+    float: left;
+    width: 70%;
+}
+
+.section1 {
+    border-bottom: #85B5CC solid 2px;
+    margin-bottom: 20px;
+}
+
+.section1 .left {
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.section1 .left .part {
+    margin: 15px;
+    text-align: center;
+}
+
+.section1 .left .part h6 i {
+    color: #85B5CC;
+    padding-right: 4px;
+}
+
+.right {
+    float: right;
+    width: 30%;
+}
+
+.section1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section1 .right {
+    position: relative;
+}
+
+.section1 .right .article {
+    position: absolute;
+    bottom: -143px;
+    right: 30px;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #85B5CC;
+    border-top: none;
+    width: 100%;
+}
+
+.section1 .right .article span {
+    color: #85B5CC;
+    font-size: 30px;
+    padding: 10px 0px;
+    font-family: 'Texturina', serif;
+}
+
+.section1 .right .article a {
+    display: block;
+    background-color: #054581;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.section1 .right .article a:hover {
+    background-color: #051422;
+}
+
+.section1 .right .article a i {
+    padding-right: 10px;
+}
+
+@media(max-width:912px) {
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+    .section1 .left {
+        width: 100%;
+        border: 2px solid #85B5CC;
+        border-top: none;
+    }
+    .section1 .right {
+        width: 100%;
+    }
+    .section1 .right .article {
+        position: static;
+        border-bottom: none;
+    }
+}
+
+.section2 .left {
+    padding: 10px 10px;
+    padding-bottom: 0px;
+}
+
+.section2 .part1 {
+    padding: 15px;
+}
+
+.section2 .part1 .container img {
+    height: 500px;
+}
+
+.part1 .row {
+    padding: 5px 20px;
+    border-bottom: #85B5CC 2px solid;
+}
+
+.part1 .column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+.part1 .column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.part1 .current img {
+    opacity: 1;
+    border: 2px solid black;
+}
+
+.part1 .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.section2 .left .part2 {
+    background-color: #D1E8F3;
+    width: 100%;
+    padding: 15px;
+}
+
+.section2 .left .part2 p {
+    font-family: 'Texturina', serif;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section2 .left .part2 .row .col {
+    padding: 10px;
+    text-align: center;
+}
+
+.section2 .left .part2 .row .col i {
+    padding-right: 4px;
+    color: #051422;
+}
+
+.section2 .left .part3 {
+    margin: 10px;
+    padding: 20px 15px;
+    line-height: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.section2 .left .part3 h3 {
+    font-family: 'Texturina', serif;
+}
+
+.section2 .left .part3 ul {
+    padding: 15px;
+    padding-left: 45px;
+    padding-bottom: 0px;
+}
+
+.section2 .right {
+    padding: 25px 0px;
+}
+
+.section2 .right .part1 {
+    border: 2px solid #85B5CC;
+    padding: 10px;
+    width: 100%;
+}
+
+.section2 .right .part1 p {
+    font-family: 'Texturina', serif;
+    border-bottom: 2px solid #85B5CC;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.section2 .right .part1 span {
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.section2 .right .part2 {
+    width: 100%;
+    border: 2px solid #85B5CC;
+    margin-top: 30px;
+}
+
+.section2 .right .part2 h3 {
+    padding: 15px;
+    background-color: #054581;
+    font-family: 'Texturina', serif;
+    color: white;
+}
+
+.section2 .right .part2 .form {
+    padding: 20px;
+}
+
+.section2 .right .part2 .form .input {
+    display: flex;
+    border: 2px solid #85B5CC;
+    margin: 25px auto;
+}
+
+.section2 .right .part2 .form .input input,
+.section2 .right .part2 .form .input select {
+    padding: 10px;
+    outline: none;
+    border: none;
+    display: inline;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.section2 .right .part2 .form .input i {
+    background-color: white;
+    color: #85B5CC;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+input[type="date"]:before {
+    content: attr(placeholder) ":" !important;
+    color: black;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+    content: "";
+}
+
+.section2 .right .part2 .form .date i {
+    padding-top: 15px;
+}
+
+.section2 .right .part2 .form button {
+    outline: none;
+    padding: none;
+    border: none;
+    display: block;
+    width: 100%;
+}
+
+.section2 .right .part2 .form button a {
+    display: block;
+    padding: 15px;
+    color: white;
+    background-color: #054581;
+    text-decoration: none;
+    text-align: center;
+}
+
+.section2 .right .part2 .form button a i {
+    padding-right: 5px;
+}
+
+.section2 .right .part2 .form button a:hover {
+    background-color: #051422;
+}
+
+.section2::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section3 {
+    border-bottom: 2px solid #85B5CC;
+    margin-bottom: 20px;
+}
+
+.section3 .nav .nav-item a {
+    font-family: 'Texturina', serif;
+    color: #054581;
+    padding: 20px;
+    padding-top: none;
+}
+
+.section3 .nav .nav-item a.active {
+    color: crimson;
+}
+
+.section3 .nav {
+    border: 2ox solid #85B5CC;
+}
+
+.tab-content {
+    border-top: 2px solid #85B5CC;
+}
+
+#myTabContent {
+    padding: 10px 15px;
+    padding-top: 40px;
+}
+
+#myTabContent #infotab ul {
+    padding-left: 40px;
+    line-height: 30px;
+}
+
+.tab-content .tab-pane h3 {
+    font-family: 'Texturina', serif;
+}
+
+.tab-content #reviewtab #heading {
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+table {
+    box-shadow: 2px 2px 7px grey;
+}
+
+.tab-content #pricetab table {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.tab-content #pricetab table td {
+    border: black !important;
+}
+
+.tab-content #pricetab thead {
+    background-color: #D1E8F3;
+}
+
+.tab-content #reviewtab .review {
+    padding: 15px 20px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #85B5CC;
+}
+
+.tab-content #reviewtab .review .img {
+    font-size: 70px;
+    float: left;
+    padding-right: 12px;
+    color: grey;
+}
+
+.tab-content #reviewtab .review .text {
+    width: 100%;
+}
+
+.tab-content #reviewtab .review .text h5 {
+    color: #054581;
+}
+
+.tab-content #reviewtab .review .text {
+    padding-top: 10px;
+}
+
+.tab-content #reviewtab .review .text .rating {
+    color: gainsboro;
+    float: right;
+    padding-left: 20px;
+}
+
+.checked {
+    color: orange;
+}
+
+.reviewform h3 {
+    padding-bottom: 10px;
+}
+
+.reviewform {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.rating1 {
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.rating1 a,
+.rating1 label {
+    float: right;
+    color: #aaa;
+    text-decoration: none;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -o-transition: color .4s;
+    transition: color .4s;
+}
+
+.rating1 label:hover~label,
+.rating1 input:focus~label,
+.rating1 label:hover,
+.rating1 a:hover,
+.rating1 a:hover~a,
+.rating1 a:focus,
+.rating1 a:focus~a {
+    color: orange;
+    cursor: pointer;
+}
+
+.rating2 {
+    direction: rtl;
+}
+
+.rating2 a {
+    float: none
+}
+
+.reviewinput label {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.reviewinput textarea,
+.reviewinput input {
+    border: none;
+    outline: none;
+    border: 1px solid #054581;
+    display: block;
+    width: 100%;
+}
+
+.reviewinput input {
+    width: 30%;
+    min-width: 200px;
+}
+
+.reviewform form button {
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    background-color: #054581;
+    color: white;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.reviewform form button:hover {
+    background-color: #051422;
+}
+
+
+/* section4 */
+
+.section4 {
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+}
+
+.section4 h2 {
+    font-family: 'Texturina', serif;
+    text-align: center;
+    margin: 20px;
+}
+
+
+/* rooms style */
+
+.section4 .article {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section4 .layer1 {
+    background: rgba(5, 69, 129, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.section4 .article img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 300px;
+}
+
+.section4 .article .content {
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(5, 69, 129, 1), rgba(5, 69, 129, 0));
+    color: white;
+    padding: 20px;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.section4 .article:hover>.layer1 {
+    display: block;
+}
+
+.section4 .content1 {
+    float: left;
+}
+
+.section4 .content1 h3 {
+    font-family: 'Texturina', serif;
+}
+
+.section4 .content1 h5,
+.section4 .content1 p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.section4 .rating {
+    position: absolute;
+    right: 22px;
+    bottom: 32px;
+    float: right;
+}
+
+.section4 .details {
+    position: absolute;
+    position: absolute;
+    right: 22px;
+    bottom: 32px;
+    float: right;
+    display: none;
+}
+
+.section4 .details a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section4 .details a:hover {
+    color: crimson;
+}
+
+.section4 .article:hover>.content>.rating {
+    display: none;
+}
+
+.section4 .article:hover>.content>.details {
+    display: block;
+}
+
+.section4 .checked {
+    color: orange;
+}
+
+@media(max-width:1090px) {
+    .section4 .article img {
+        height: 400px;
+    }
+}
+
+@media(max-width:730px) {
+    .section4 .article img {
+        height: 300px;
+    }
+}

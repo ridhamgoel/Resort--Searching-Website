@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 390px;
+}
+
+.section {
+    margin-top: 20px;
+    height: 20px;
+    font-size: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+hr {
+    opacity: 20%;
+}
+
+footer {
+    width: 100%;
+    min-width: 277px;
+    background: linear-gradient(rgba(255, 255, 255, 0.144), rgba(255, 255, 255, 0.014)), url("https://images.wallpaperscraft.com/image/glare_bokeh_shine_134674_3840x2400.jpg");
+    background-size: cover;
+    max-width: 1811px;
+    font-weight: bolder;
+}
+
+.up {
+    padding: 40px;
+    float: left;
+    color: rgb(255, 255, 255);
+}
+
+.up ul li {
+    list-style: none;
+    padding: 0px 3px 3px;
+}
+
+.up ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.up h3 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.up i {
+    padding: 7px;
+    padding-left: 0;
+}
+
+.upleft {
+    width: 30%;
+    float: left;
+}
+
+.upright {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.up a:hover {
+    color: rgb(175, 121, 175);
+}
+
+.middle {
+    text-align: center;
+    padding: 35px;
+}
+
+h2 {
+    color: white;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 30px 30px;
+}
+
+.logos a {
+    margin: 0px 10px 10px;
+    border-radius: 50%;
+    background-color: #9e9e9e;
+    color: gray;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    display: block;
+}
+
+.logos a i {
+    line-height: 55px;
+    font-size: 30px;
+}
+
+.facebook:hover {
+    background-color: #4867AA;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+}
+
+.linkedin:hover {
+    background-color: #0077B5;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+}
+
+.twitter:hover {
+    background-color: #2CAAE1;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+}
+
+.google:hover {
+    background-color: red;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+}
+
+.logos a i:hover {
+    color: white;
+}
+
+.github:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+}
+
+.bottom {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    color: lightgray;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bottom i {
+    margin-right: 8px;
+}
+
+.bottom p {
+    position: relative;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: white;
+}
+
+.bottom p::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    width: 0px;
+    height: 4px;
+    background-color: rgb(209, 163, 76);
+    transition: all .3s;
+    right: 0;
+}
+
+.bottom p:hover::after {
+    width: 100%;
+}
+
+.up hr {
+    opacity: 20%;
+    margin: 20px 0px 25px;
+}
+
+#Payment li {
+    padding: 7px;
+}
+
+.middle form {
+    padding: 0px 20px;
+}
+
+.userinputs {
+    padding: 15px;
+}
+
+#email,
+#name {
+    margin: 10px 5px;
+    height: 40px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.middle button {
+    margin: 0px 5px;
+    height: 30px;
+    padding: 15px;
+    outline: 0px;
+    box-shadow: gray 2px 2px 2px;
+    border: 0px;
+    font-weight: bold;
+    width: 110px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+}
+
+.middle button:hover {
+    background-color: blue;
+}
+
+@media(max-width: 845px) {
+    .upleft {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .section {
+        font-size: 55px;
+    }
+    .upright {
+        width: 100%;
+    }
+}
+
+@media(max-width: 716px) {
+    .middle button {
+        margin-top: 8px;
+    }
+}
+
+@media(max-width: 605px) {
+    .upright {
+        flex-direction: column;
+    }
+    .section {
+        font-size: 45px;
+    }
+    .upright ul {
+        border-top: 2px solid rgba(238, 238, 238, 0.3);
+        width: 100%;
+        padding-top: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .middle h2 {
+        margin-bottom: 15px;
+    }
+}
